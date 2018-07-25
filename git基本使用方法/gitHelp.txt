@@ -1,0 +1,27 @@
+
+#创建readme.md 并在里边显示   MyLibrary001
+echo "# MyLibrary001" >> README.md
+#创建并初始化git仓库
+git init
+#向仓库添加（更新）文件
+git add README.md
+#提交（更新）文件，并添加备注信息
+git commit -m "first commit"
+#连接远程github项目，之后会让（弹出窗）输入账号密码
+git remote add origin https://github.com/Insect001/MyLibrary001.git
+#向远程仓库上传文件（将本地项目更新到github项目上去）
+git push -u origin master
+#将远程存储库中的更改合并到当前分支中
+git pull
+#编辑一个txt文档
+vi 123456.txt
+#更新文档
+git add 123456.txt
+#提交
+git commit
+#上传
+git push
+#git基本命令是在linux环境下运行的，因此linux基本命令同样适用
+ls
+mkdir
+rm。。。。。。
