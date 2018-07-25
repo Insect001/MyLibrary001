@@ -11,6 +11,16 @@ git commit -m "first commit"
 git remote add origin https://github.com/Insect001/MyLibrary001.git
 #向远程仓库上传文件（将本地项目更新到github项目上去）
 git push -u origin master
+#如果报错fatal: refusing to merge unrelated histories则表示，该同步仓库已有项目文件执行下步操作，否则跳过
+#允许同步合并无关的历史版本
+git pull --allow-unrelated-histories origin master
+#再次执行
+git push -u origin master
+#如果继续报错
+git remote rm origin
+git remote add origin https://github.com/Insect001/MyLibrary001.git
+git push -u origin master
+#重复执行直到git pull git push 正常返回Already up to date   Everything up-to-date
 #将远程存储库中的更改合并到当前分支中
 git pull
 #编辑一个txt文档
