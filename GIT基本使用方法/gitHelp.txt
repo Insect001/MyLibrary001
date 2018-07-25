@@ -35,3 +35,8 @@ git push
 ls
 mkdir
 rm。。。。。。
+#如何删除文件夹通过本地文件夹直接选中删除然后
+git commit -m "delete"
+git pull
+git push
+#完成
